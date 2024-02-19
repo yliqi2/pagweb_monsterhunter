@@ -78,6 +78,11 @@
         .weapon-icon {
             text-align: center;
         }
+
+        img.unknown {
+            border-radius: 10px;
+            width: 250px;
+        }
         
         .atributo img {
             width: 30px;

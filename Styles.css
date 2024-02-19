@@ -28,6 +28,15 @@
 
         }
         
+        .w1, .w2 {
+            display: flex;
+            width: 50px;
+        }
+        
+        .weapon {
+            text-align: center;
+        }
+
         footer {
             background-color: black;
             color: white;

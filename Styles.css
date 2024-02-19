@@ -30,11 +30,12 @@
         
         .w1, .w2 {
             display: flex;
-            width: 50px;
+            width: 100px;
         }
         
         .weapon {
             text-align: center;
+            padding: 10px;
         }
 
         footer {

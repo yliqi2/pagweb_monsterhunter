@@ -27,6 +27,10 @@
         body {
 
         }
+
+        .intro{
+            border-radius: 6px;
+        }
         
         .estructura {
             display: flex;

@@ -28,27 +28,27 @@
 
         }
         
-        .w1, .w2 {
+        .estructura {
             display: flex;
             width: 100px;
         }
         
-        .weapon {
+        .ImgTxt {
             flex: 1 0 40%;
             margin: 10px;
             text-align: center;
         }
 
-        .weapon img {
+        .ImgTxt img {
             width: 150px;
             transition: transform 0.3s;
         }
 
-        .weapon img:hover {
+        .ImgTxt img:hover {
             transform: scale(1.1);
         }
 
-        .weapon p {
+        .ImgTxt p {
             font-size: 20px;
         }
 

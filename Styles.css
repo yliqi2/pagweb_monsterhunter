@@ -1,51 +1,103 @@
-.icono {
-    width: 50px;
-    height: 50px;
-}
+        header {
+            padding: 10px;
+        }
 
-body {
-    background-image: url("https://wallpaper-mania.com/wp-content/uploads/2018/09/High_resolution_wallpaper_background_ID_77700872858.jpg");
-    background-repeat: no-repeat;
-    background-size: cover; 
-    background-position: center; 
-    overflow: hidden;
-    margin: 0;
-    padding: 0;
-}
+        .icono {
+            width: 50px;
+            height: 50px;
+        }
 
-header {
-    background-color: transparent;
-    position: fixed;
-    width: 100%;
-    z-index: 1000;
-}
+        nav {
+            display: flex;
+            margin-bottom: auto;
+            margin-top: auto;
+            padding: 10px;
+            border-radius: 8px;
+        }
 
-nav {
-    display: flex;
-    justify-content: center;
-    padding: 20px 0 10px;
-    border-radius: 8px;
-}
+        nav a {
+            margin-right: 0px;
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+            font-size: 25px;
+            margin: 0 35px;
+            margin-top: 10px;
+        }
 
-nav a {
-    text-decoration: none;
-    color: white;
-    font-size: 25px;
-    margin: 0 35px;
-    margin-top: 15px;
-}
+        body {
 
-.container {
-    padding-top: 100px;
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+        }
 
-.centrado {
-    width: auto;
-    height: auto;
-}
+        .intro{
+            border-radius: 6px;
+        }
+        
+        .estructura {
+            display: flex;
+            width: 100px;
+        }
+        
+        .ImgTxt {
+            flex: 1 0 40%;
+            margin: 10px;
+            text-align: center;
+        }
 
+        .ImgTxt img {
+            width: 150px;
+            transition: transform 0.3s;
+        }
+
+        .ImgTxt img:hover {
+            transform: scale(1.1);
+        }
+
+        .ImgTxt p {
+            font-size: 20px;
+        }
+
+        table {
+            width: 480px;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+            font-size: 20px;
+        }
+        
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+        
+        .atributo {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+        
+        .weapon-title {
+            text-align: center;
+        }
+
+        .weapon-icon {
+            text-align: center;
+        }
+        
+        .atributo img {
+            width: 30px;
+            height: auto;
+            margin-right: 10px;
+        }
+
+        .content p {
+            margin: 0;
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            font-size: 20px;
+            bottom: 0;
+        }

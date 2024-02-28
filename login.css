@@ -77,14 +77,14 @@ input {
     text-decoration: none;
 }
 
-input:focus ~ label, 
-input:valid ~ valid {
+
+
+input:not(:placeholder-shown) ~ label {
     top: -5px;
 }
-
 .input-cont input {
     width: 100%;
-    height: 50px;
+    height: 25px;
     background-color: transparent;
     border: none;
     outline: none;

@@ -109,3 +109,29 @@ button:hover {
     background-color: rgba(255, 255, 255, 0.6s);
     text-decoration: underline;
 }
+
+header {
+    background-color: transparent;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0 10px;
+    border-radius: 8px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    margin: 0 35px;
+    margin-top: 15px;
+}
+.icono {
+    width: 50px;
+    height: 50px;
+}

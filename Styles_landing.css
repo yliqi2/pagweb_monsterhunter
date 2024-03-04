@@ -85,3 +85,13 @@ nav a {
 #link:hover:after {
     transform: scaleX(1);
 }
+
+
+#persona :hover {
+    transition: all 0.3s ease;
+    scale: 1.5;
+}
+
+i {
+    color: white;
+}

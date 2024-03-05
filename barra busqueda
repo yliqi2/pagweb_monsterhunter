@@ -1,4 +1,3 @@
-<h1>Buscador de Monstruos</h1>
     <input type="text" id="searchInput" placeholder="Buscar monstruo...">
     <button onclick="searchMonsters()">Buscar</button>
     <div id="searchResults"></div>

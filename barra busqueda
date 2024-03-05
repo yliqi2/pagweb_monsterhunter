@@ -1,0 +1,82 @@
+<h1>Buscador de Monstruos</h1>
+    <input type="text" id="searchInput" placeholder="Buscar monstruo...">
+    <button onclick="searchMonsters()">Buscar</button>
+    <div id="searchResults"></div>
+
+    <script>
+        function searchMonsters() {
+            const query = document.getElementById('searchInput').value.toLowerCase();
+            const monsters = [
+                "Gran Jaggi",
+                "Gran Baggi",
+                "Gran Wroggi",
+                "Arzuros",
+                "Lagombi",
+                "Volvidon",
+                "Ludroth Real",
+                "Ludroth Purpúreo",
+                "Qurupeco",
+                "Qurupeco Carmesí",
+                "Gobul",
+                "Nibelsnarf",
+                "Barroth",
+                "Barroth Esmeralda",
+                "Plesioth",
+                "Plesioth Verde",
+                "Duramboros",
+                "Duramboros Herrumbroso",
+                "Agnaktor",
+                "Agnaktor Glacial",
+                "Barioth",
+                "Barioth Arenoso",
+                "Gigginox",
+                "Gigginox Aterrador",
+                "Zinogre",
+                "Zinogre Estigio",
+                "Uragaan",
+                "Uragaan Acerado",
+                "Diablos",
+                "Diablos Negra",
+                "Rathian",
+                "Rathian Rosa",
+                "Rathian Dorada",
+                "Rathalos",
+                "Rathalos Celeste",
+                "Rathalos Plateado",
+                "Nargacuga",
+                "Nargacuga Verdoso",
+                "Nargacuga Lunar",
+                "Lagiacrus",
+                "Lagiacrus Marmóreo",
+                "Lagiacrus del Abismo",
+                "Brachydios",
+                "Deviljho",
+                "Jhen Mohran",
+                "Jhen Mohran Sagrado",
+                "Ceadeus",
+                "Ceadeus Barba Dorada",
+                "Alatreon",
+                "Miralis Funesto"
+            ];
+
+            const resultsContainer = document.getElementById('searchResults');
+            resultsContainer.innerHTML = '';
+
+            const matchingMonsters = monsters.filter(monster => monster.toLowerCase().includes(query));
+
+            if (matchingMonsters.length === 0) {
+                resultsContainer.innerHTML = 'No se encontraron resultados.';
+            } else {
+                const resultList = document.createElement('ul');
+                matchingMonsters.forEach(monster => {
+                    const listItem = document.createElement('li');
+                    const link = document.createElement('a');
+                    link.href = `${monster}.html`;
+                    link.textContent = monster;
+                    listItem.appendChild(link);
+                    resultList.appendChild(listItem);
+                });
+                resultsContainer.appendChild(resultList);
+            }
+        }
+    </script>

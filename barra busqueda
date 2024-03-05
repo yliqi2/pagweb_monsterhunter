@@ -1,4 +1,4 @@
-    <input type="text" id="InsertarTextoBarra">
+    <input type="text" id="InsertarTextoBarra" onkeypress="Enter(event)">
     <button onclick="barra_busqueda()">Buscar</button>
     <div id="Realizar_Busqueda"></div>
 
@@ -6,16 +6,15 @@
         function barra_busqueda() {
             const query = document.getElementById('InsertarTextoBarra').value.toLowerCase();
             const Contenido = [
-            "Gran Jaggi", "Gran Baggi", "Gran Wroggi", "Arzuros", "Lagombi", "Volvidon", "Ludroth Real", "Ludroth Purpúreo", "Qurupeco", "Qurupeco Carmesí",
-            "Gobul", "Nibelsnarf", "Barroth", "Barroth Esmeralda", "Plesioth", "Plesioth Verde", "Duramboros", "Duramboros Herrumbroso", "Agnaktor",
-            "Agnaktor Glacial", "Barioth", "Barioth Arenoso", "Gigginox", "Gigginox Aterrador", "Zinogre", "Zinogre Estigio", "Uragaan", "Uragaan Acerado",
-            "Diablos", "Diablos Negra", "Rathian", "Rathian Rosa", "Rathian Dorada", "Rathalos", "Rathalos Celeste", "Rathalos Plateado", "Nargacuga",
-            "Nargacuga Verdoso", "Nargacuga Lunar", "Lagiacrus", "Lagiacrus Marmóreo", "Lagiacrus del Abismo", "Brachydios", "Deviljho", "Jhen Mohran",
-            "Jhen Mohran Sagrado", "Ceadeus", "Ceadeus Barba Dorada", "Alatreon", "Miralis Funesto"
-        ];
+                "Gran Jaggi", "Gran Baggi", "Gran Wroggi", "Arzuros", "Lagombi", "Volvidon", "Ludroth Real", "Ludroth Purpúreo", "Qurupeco", "Qurupeco Carmesí",
+                "Gobul", "Nibelsnarf", "Barroth", "Barroth Esmeralda", "Plesioth", "Plesioth Verde", "Duramboros", "Duramboros Herrumbroso", "Agnaktor",
+                "Agnaktor Glacial", "Barioth", "Barioth Arenoso", "Gigginox", "Gigginox Aterrador", "Zinogre", "Zinogre Estigio", "Uragaan", "Uragaan Acerado",
+                "Diablos", "Diablos Negra", "Rathian", "Rathian Rosa", "Rathian Dorada", "Rathalos", "Rathalos Celeste", "Rathalos Plateado", "Nargacuga",
+                "Nargacuga Verdoso", "Nargacuga Lunar", "Lagiacrus", "Lagiacrus Marmóreo", "Lagiacrus del Abismo", "Brachydios", "Deviljho", "Jhen Mohran",
+                "Jhen Mohran Sagrado", "Ceadeus", "Ceadeus Barba Dorada", "Alatreon", "Miralis Funesto"
+            ];
 
             const Resultado = document.getElementById('Realizar_Busqueda');
-
             const Contenido_Existente = Contenido.filter(Contenido => Contenido.toLowerCase().includes(query));
 
             if (Contenido_Existente.length === 0) {
@@ -31,6 +30,12 @@
                     Lista_Resultados.appendChild(Listado);
                 });
                 Resultado.appendChild(Lista_Resultados);
+            }
+        }
+
+        function Enter(event) {
+            if (event.key === "Enter") {
+                barra_busqueda();
             }
         }
     </script>

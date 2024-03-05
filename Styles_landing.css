@@ -10,3 +10,34 @@
     height: auto;
 }
 
+.buscador{
+
+    
+}
+
+#InsertarTextoBarra {
+    justify-content: center;
+    width: 200px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    padding: 8px 12px;
+    font-size: 16px;
+    border-radius: 20px; 
+    outline: none;
+}
+
+#btn_buscar {
+    width: 40px;
+    background-color: transparent;
+    border: 1px solid white;
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    outline: none;
+}
+
+#btn_buscar:active {
+    color: black;
+}

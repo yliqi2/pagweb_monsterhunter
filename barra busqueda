@@ -1,11 +1,11 @@
-    <input type="text" id="searchInput" placeholder="Buscar monstruo...">
-    <button onclick="searchMonsters()">Buscar</button>
-    <div id="searchResults"></div>
+    <input type="text" id="InsertarTextoBarra">
+    <button onclick="barra_busqueda()">Buscar</button>
+    <div id="Realizar_Busqueda"></div>
 
     <script>
-        function searchMonsters() {
-            const query = document.getElementById('searchInput').value.toLowerCase();
-            const monsters = [
+        function barra_busqueda() {
+            const query = document.getElementById('InsertarTextoBarra').value.toLowerCase();
+            const Contenido = [
                 "Gran Jaggi",
                 "Gran Baggi",
                 "Gran Wroggi",
@@ -58,24 +58,23 @@
                 "Miralis Funesto"
             ];
 
-            const resultsContainer = document.getElementById('searchResults');
-            resultsContainer.innerHTML = '';
+            const Resultado = document.getElementById('Realizar_Busqueda');
 
-            const matchingMonsters = monsters.filter(monster => monster.toLowerCase().includes(query));
+            const Contenido_Existente = Contenido.filter(Contenido => Contenido.toLowerCase().includes(query));
 
-            if (matchingMonsters.length === 0) {
-                resultsContainer.innerHTML = 'No se encontraron resultados.';
+            if (Contenido_Existente.length === 0) {
+                Resultado.innerHTML = 'No existe este contenido';
             } else {
-                const resultList = document.createElement('ul');
-                matchingMonsters.forEach(monster => {
-                    const listItem = document.createElement('li');
-                    const link = document.createElement('a');
-                    link.href = `${monster}.html`;
-                    link.textContent = monster;
-                    listItem.appendChild(link);
-                    resultList.appendChild(listItem);
+                const Lista_Resultados = document.createElement('ul');
+                Contenido_Existente.forEach(Contenido => {
+                    const Listado = document.createElement('ol');
+                    const EnlaceHTML = document.createElement('a');
+                    EnlaceHTML.href = `${Contenido}.html`;
+                    EnlaceHTML.textContent = Contenido;
+                    Listado.appendChild(EnlaceHTML);
+                    Lista_Resultados.appendChild(Listado);
                 });
-                resultsContainer.appendChild(resultList);
+                Resultado.appendChild(Lista_Resultados);
             }
         }
     </script>

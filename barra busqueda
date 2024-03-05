@@ -15,7 +15,6 @@
         ];
 
         const Resultado = document.getElementById('Realizar_Busqueda');
-        // Limpiar el contenido existente
         Resultado.innerHTML = '';
 
         const Contenido_Existente = Contenido.filter(Contenido => Contenido.toLowerCase().includes(query));

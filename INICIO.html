@@ -43,37 +43,46 @@
     </div>
 
     <script>
-        function barra_busqueda() {
-            const query = document.getElementById('InsertarTextoBarra').value.trim().toLowerCase();
-            const Contenido = [
-                "Gran Jaggi", "Gran Baggi", "Gran Wroggi", "Arzuros", "Lagombi", "Volvidon", "Ludroth Real", "Ludroth Purpúreo", "Qurupeco", "Qurupeco Carmesí",
-                "Gobul", "Nibelsnarf", "Barroth", "Barroth Esmeralda", "Plesioth", "Plesioth Verde", "Duramboros", "Duramboros Herrumbroso", "Agnaktor",
-                "Agnaktor Glacial", "Barioth", "Barioth Arenoso", "Gigginox", "Gigginox Aterrador", "Zinogre", "Zinogre Estigio", "Uragaan", "Uragaan Acerado",
-                "Diablos", "Diablos Negra", "Rathian", "Rathian Rosa", "Rathian Dorada", "Rathalos", "Rathalos Celeste", "Rathalos Plateado", "Nargacuga",
-                "Nargacuga Verdoso", "Nargacuga Lunar", "Lagiacrus", "Lagiacrus Marmóreo", "Lagiacrus del Abismo", "Brachydios", "Deviljho", "Jhen Mohran",
-                "Jhen Mohran Sagrado", "Ceadeus", "Ceadeus Barba Dorada", "Alatreon", "Miralis Funesto"
-            ];
-    
-            const Resultado = document.getElementById('Realizar_Busqueda');
-            Resultado.innerHTML = '';
-    
-            const Contenido_Existente = Contenido.filter(Contenido => Contenido.toLowerCase().includes(query));
-    
-            if (query !== '' && Contenido_Existente.length === 0) {
-                Resultado.innerHTML = 'No existe este contenido';
-            } else if (query !== '') {
-                const Lista_Resultados = document.createElement('ul');
-                Contenido_Existente.forEach(Contenido => {
-                    const Listado = document.createElement('ol');
-                    const EnlaceHTML = document.createElement('a');
-                    EnlaceHTML.href = `${Contenido}.html`;
-                    EnlaceHTML.textContent = Contenido;
-                    Listado.appendChild(EnlaceHTML);
-                    Lista_Resultados.appendChild(Listado);
-                });
-                Resultado.appendChild(Lista_Resultados);
-            }
+            function barra_busqueda() {
+        const query = document.getElementById('InsertarTextoBarra').value.trim().toLowerCase();
+        const Contenido = [
+            "Gran Jaggi", "Gran Baggi", "Gran Wroggi", "Arzuros", "Lagombi", "Volvidon", "Ludroth Real", "Ludroth Purpúreo", "Qurupeco", "Qurupeco Carmesí",
+            "Gobul", "Nibelsnarf", "Barroth", "Barroth Esmeralda", "Plesioth", "Plesioth Verde", "Duramboros", "Duramboros Herrumbroso", "Agnaktor",
+            "Agnaktor Glacial", "Barioth", "Barioth Arenoso", "Gigginox", "Gigginox Aterrador", "Zinogre", "Zinogre Estigio", "Uragaan", "Uragaan Acerado",
+            "Diablos", "Diablos Negra", "Rathian", "Rathian Rosa", "Rathian Dorada", "Rathalos", "Rathalos Celeste", "Rathalos Plateado", "Nargacuga",
+            "Nargacuga Verdoso", "Nargacuga Lunar", "Lagiacrus", "Lagiacrus Marmóreo", "Lagiacrus del Abismo", "Brachydios", "Deviljho", "Jhen Mohran",
+            "Jhen Mohran Sagrado", "Ceadeus", "Ceadeus Barba Dorada", "Alatreon", "Miralis Funesto"
+        ];
+
+        const Resultado = document.getElementById('Realizar_Busqueda');
+        Resultado.innerHTML = '';
+        Resultado.style.backgroundColor = 'rgba(0, 0, 0, 0.7)';
+        Resultado.style.padding = '10px';
+        Resultado.style.borderRadius = '10px';
+
+        const Contenido_Existente = Contenido.filter(Contenido => Contenido.toLowerCase().includes(query));
+
+        if (query !== '' && Contenido_Existente.length === 0) {
+            Resultado.innerHTML = 'No existe este contenido';
+        } else if (query !== '') {
+            const Lista_Resultados = document.createElement('ul');
+            Lista_Resultados.style.listStyleType = 'none';
+            Lista_Resultados.style.padding = '0';
+
+            Contenido_Existente.forEach(Contenido => {
+                const Listado = document.createElement('li');
+                Listado.style.marginBottom = '5px';
+                const EnlaceHTML = document.createElement('a');
+                EnlaceHTML.href = `${Contenido}.html`;
+                EnlaceHTML.textContent = Contenido;
+                EnlaceHTML.style.color = 'white';
+                EnlaceHTML.style.textDecoration = 'none';
+                Listado.appendChild(EnlaceHTML);
+                Lista_Resultados.appendChild(Listado);
+            });
+            Resultado.appendChild(Lista_Resultados);
         }
+    }
     
         function Enter(event) {
             if (event.key === "Enter") {

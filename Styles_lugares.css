@@ -4,15 +4,15 @@
 }
 
 body {
-    background-image: url("https://wallpaper-mania.com/wp-content/uploads/2018/09/High_resolution_wallpaper_background_ID_77700872858.jpg");
-    background-repeat: no-repeat;
-    background-size: cover; 
-    background-position: center; 
-    overflow: hidden;
-    margin: 0;
-    padding: 0;
-    font-family: "Poppins", sans-serif;
+  background-image: url("https://wallpaper-mania.com/wp-content/uploads/2018/09/High_resolution_wallpaper_background_ID_77700872858.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; /* Cubre toda la ventana del navegador */
+  background-position: center;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
 }
+
 nav {
     display: flex;
     flex-grow: 1;
@@ -93,7 +93,7 @@ i {
 /* Hide the images by default */
 .mySlides {
   display: none;
-    margin-top: 8%;
+  margin-top: 8%;
 }
 /* Next & previous buttons */
 .prev, .next {
@@ -172,3 +172,11 @@ i {
   to {opacity: 1}
 }
 
+.container{
+  border: white solid;
+}
+.texto{
+  border: white solid;
+  color: white;
+  text-align: center;
+}

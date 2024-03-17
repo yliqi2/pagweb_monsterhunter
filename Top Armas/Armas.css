@@ -82,49 +82,62 @@ body {
     background-repeat: no-repeat;
     background-size: cover; 
     background-position: center; 
+    margin-bottom: 100px;
 }
 
-section {
+.centrar {
+    text-align: center;
+    margin: 0 auto;
+}
+
+footer {
+    background-color: black;
     color: white;
+    padding: 10px;
     text-align: center;
-}
-
-section h1 {
-    margin-top: 50px;
-}
-
-.video {
-    margin-bottom: 30px;
-}
-
-.estructura {
-    width: 50%; 
-    margin: auto; 
-    display: flex;
-    flex-wrap: wrap; 
-}
-
-.ImgTxt {
-    flex: 1 0 calc(33.33% - 20px); 
-    margin: 5px 10px; 
-    text-align: center;
-    box-sizing: border-box; 
-}
-
-.ImgTxt img {
+    font-size: 20px;
+    position: fixed;
+    bottom: 0;
     width: 100%;
-    max-width: 150px;
-    border-radius: 10px;
-    transition: transform 0.3s;
-}
-
-.ImgTxt img:hover {
-    transform: scale(1.1);
-}
-
-.ImgTxt p {
-    margin-top: 10px;
-    font-size: 18px;
 }
 
 
+table {
+            width: 480px;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+            font-size: 20px;
+            margin: 0 auto;
+        }
+        
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+        
+        .atributo {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+        
+        .weapon-title {
+            text-align: center;
+        }
+
+        .weapon-icon {
+            text-align: center;
+        }
+        
+        .atributo img {
+            width: 30px;
+            height: auto;
+            margin-right: 10px;
+        }
+
+        .content p {
+            margin: 0;
+        }
+
+        

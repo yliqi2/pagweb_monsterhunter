@@ -79,20 +79,9 @@ nav a {
     align-items: center;
 }
 
-.monster_img_container {
-    width: 80%;
-    margin: 20px auto;
-}
-
 .monster_img {
     width: 100%;
     max-width: 800px;
-}
-
-.triplete {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 20px;  
 }
 
 .monster_info {

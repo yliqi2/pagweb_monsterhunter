@@ -95,9 +95,9 @@ section h1 {
     margin-top: 50px;
 }
 
-.video {
-    margin-bottom: 30px;
-    
+.intro {
+    margin-bottom: 20px;
+    border-radius: 8px;
 }
 
 .estructura {

@@ -83,41 +83,43 @@ i {
     color: white;
 }
 
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
 .formulario {
-    width: 18.2%;
-    height: 38.5%;
-    margin-left: auto;
-    margin-right: auto;
     padding: 20px;
-    margin-bottom: 50px;
     border: 2px solid rgba(255, 255, 255, .6);
     border-radius: 15px;
+    margin-top: 20px;
+    margin: 20px auto;
 }
 
-.formulario input {
-    width: 245px;
-    height: 30px;
-    margin-top: 10px;
-    border-radius: 8px;
-    padding: 5px;
+.formulario label {
+    margin-bottom: 5px;
 }
 
+.formulario input,
 .formulario textarea {
-    margin-top: 10px;
+    width: 100%;
+    margin-top: 5px;
     border-radius: 8px;
+    padding: 8px;
 }
 
 .formulario button {
-    width: 60px;
-    height: 25px;
+    width: 100%;
+    height: 40px;
     margin-top: 10px;
-    margin-left: 35.5%;
     border-radius: 8px;
     cursor: pointer;
 }
 
+
 h1 {
-    margin-left: 33%;
     color: white;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }

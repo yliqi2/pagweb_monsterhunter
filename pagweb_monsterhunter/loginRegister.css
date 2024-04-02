@@ -1,0 +1,208 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Poppins', sans-serif;
+}
+
+body 
+{
+    background: url(https://wallpaper-mania.com/wp-content/uploads/2018/09/High_resolution_wallpaper_background_ID_77700872858.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+section {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh; 
+    
+}
+
+/* vh = altura de dispositivo*/
+
+.form-box {
+    width: 380px;
+    height: 480px;
+    position: relative;
+    margin: 6% auto;
+    background-color: trans;
+    padding: 5px;
+    overflow: hidden;
+    border: 2px solid rgba(255, 255, 255, .6);
+    border-radius: 15px;
+}
+
+.button-box {
+    width: 220px;
+    margin: 35px auto;
+    position: relative;
+    box-shadow: 0 0 20px 9px #c7e6eb1f;
+    border-radius: 30px;
+}
+
+
+.toggle-btn {
+    padding: 10px 30px;
+    cursor: pointer;
+    background-color: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+    color: white;
+}
+
+
+#btn{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 110px;
+    height: 100%;
+    background: linear-gradient(to left, #06162E, #3477CE);
+    border-radius: 30px;
+    transition: .5s;
+}
+
+.social-icons {
+    margin: 50px auto;
+    text-align: center;
+    color: white;
+}
+.social-icons i {
+    width: 50px;
+    margin: 0 12px;
+}
+
+.input-group {
+    top: 180px;
+    position: absolute;
+    width: 280px;
+    transition: .5s;
+    color: white;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px 0;
+    margin: 5px 0;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background-color: transparent;
+    color: white;
+}
+
+.submit-btn {
+    width: 85%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    border: 2px solid rgba(255, 255, 255, .6);
+    background: transparent;
+    border-radius: 30px;
+    color: white;
+}
+
+.submit-btn:hover{
+   opacity: 0.6;
+}
+
+.chech-box {
+    margin: 30px 10px 30px 0;
+}
+
+span {
+    color: white;
+    font-size: 12px;
+    bottom: 68px;
+    position: absolute;
+}
+
+#login {
+    left: 50px;
+}
+#register {
+    left: 450px;
+}
+
+/* nav y header */
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    padding: 0 15px;
+    margin: 0 15px;
+    display: inline-block;
+    transition: opacity 0.3s ease;
+}
+
+#persona :hover {
+    transition: all 0.3s ease;
+    scale: 1.5;
+}
+
+i {
+    color: white;
+}
+
+#link:hover {
+    opacity: 0.7;
+}
+
+#link {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    padding: 0 15px;
+    margin: 0 15px;
+    display: inline-block;
+    position: relative;
+}
+
+#link:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1.5px;
+    display: block;
+    bottom: -5px;
+    left: 0;
+    background: linear-gradient(to right, white, grey);
+    transition: transform 0.2s ease;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+#link:hover:after {
+    transform: scaleX(1);
+}
+header {
+    background-color: transparent;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 20px;
+    font-family: "Poppins", sans-serif;
+}
+
+nav {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+
+.icono {
+    width: 50px;
+    height: 50px;
+}
+

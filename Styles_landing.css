@@ -1,0 +1,151 @@
+.icono {
+    width: 50px;
+    height: 50px;
+    padding: 20px;
+}
+
+body {
+    background-image: url("https://wallpaper-mania.com/wp-content/uploads/2018/09/High_resolution_wallpaper_background_ID_77700872858.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center; 
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+header {
+    background-color: transparent;
+    position: sticky;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    font-family: "Poppins", sans-serif;
+}
+
+nav {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    padding: 0 15px;
+    margin: 0 15px;
+    display: inline-block;
+    transition: opacity 0.3s ease;
+}
+
+#link:hover {
+    opacity: 0.7;
+}
+
+#link {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    padding: 0 15px;
+    margin: 0 15px;
+    display: inline-block;
+    position: relative;
+}
+
+#link:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1.5px;
+    display: block;
+    bottom: -5px;
+    left: 0;
+    background: linear-gradient(to right, white, grey);
+    transition: transform 0.2s ease;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+#link:hover:after {
+    transform: scaleX(1);
+}
+
+
+#persona:hover {
+    transition: all 0.3s ease;
+    scale: 1.5;
+}
+
+i {
+    color: white;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+}
+
+.centrado {
+    width: auto;
+    height: auto;
+}
+
+.buscador {
+    position: relative;
+    padding-left: 50%;
+    margin-top: -6%;
+    z-index: 1;
+}
+
+#InsertarTextoBarra {
+    justify-content: center;
+    width: 200px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    padding: 8px 12px;
+    font-size: 16px;
+    border-radius: 20px; 
+    outline: none;
+}
+
+#btn_buscar {
+    width: 40px;
+    background-color: transparent;
+    border: 1px solid white;
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    outline: none;
+}
+
+#btn_buscar:active {
+    color: black;
+}
+
+#Realizar_Busqueda {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    position: relative;
+    z-index: 2;
+}
+
+body {
+    background-image: url("https://wallpaper-mania.com/wp-content/uploads/2018/09/High_resolution_wallpaper_background_ID_77700872858.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center; 
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    overflow: hidden;
+}

@@ -13,15 +13,18 @@ body {
 .icono {
     width: 50px;
     height: 50px;
+    padding: 20px;
 }
+
 
 header {
     background-color: transparent;
+    position: sticky;
     width: 100%;
+    z-index: 1000;
     display: flex;
     justify-content: space-between; 
     align-items: center; 
-    padding: 20px;
     font-family: "Poppins", sans-serif;
 }
 
@@ -35,7 +38,10 @@ nav a {
     text-decoration: none;
     color: white;
     font-size: 15px;
-    padding: 0 
+    padding: 0 15px;
+    margin: 0 15px;
+    display: inline-block;
+    transition: opacity 0.3s ease;
 }
 
 #link:hover {
@@ -56,9 +62,9 @@ nav a {
     content: '';
     position: absolute;
     width: 100%;
-    height: 1px;
+    height: 1.5px;
     display: block;
-    bottom: -1px;
+    bottom: -5px;
     left: 0;
     background: linear-gradient(to right, white, grey);
     transition: transform 0.2s ease;
@@ -66,11 +72,24 @@ nav a {
     transform-origin: left;
 }
 
+#link:hover:after {
+    transform: scaleX(1);
+}
+
+
+#persona:hover {
+    transition: all 0.3s ease;
+    scale: 1.5;
+}
+
+i {
+    color: white;
+}
+
 .monster_container {
     width: 80%;
     max-width: auto;
     margin: 0 auto;
-    text-align: center;
     padding: 10px;
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 10px;
@@ -79,16 +98,25 @@ nav a {
     align-items: center;
 }
 
+.monster_img_container {
+    width: 80%;
+    margin: 20px auto;
+}
+
 .monster_img {
     width: 100%;
     max-width: 800px;
 }
 
 .monster_info {
-    width: calc(33.33% - 20px);
+    width: 80%;
     margin: 10px;
     text-align: center;
     word-spacing: 5px;
+}
+
+.monster_info h2 {
+    text-align: center;
 }
 
 #link:hover:after {

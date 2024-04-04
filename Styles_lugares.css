@@ -58,7 +58,7 @@ nav a {
 }
 
 
-@media only screen and (max-width: 900px) { 
+/* @media only screen and (max-width: 900px) { 
   .slideshow-container img{
     max-width: 100%;
     position: relative;
@@ -90,7 +90,7 @@ nav a {
   nav{
     display: none;
   }
-}
+} */
 
 
 

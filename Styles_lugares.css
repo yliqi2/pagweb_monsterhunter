@@ -13,6 +13,19 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 header {
   padding: 20px;
   background-color: transparent;
@@ -40,9 +53,66 @@ nav a {
   display: inline-block;
   transition: opacity 0.3s ease;
 }
+.lineas{
+  display: none;
+}
+
+
+@media only screen and (max-width: 900px) { 
+  .slideshow-container img{
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+  }
+  .header_body{
+    display: flex;
+  }
+  .imagen{
+    padding-left: 30%;
+    margin: 0 auto;
+  }
+  .icono{
+    width: 60%;
+    height: auto;
+  }
+  .lineas{
+    display: flex;
+    flex-flow: column;
+    cursor: pointer;
+  }
+  .lineas .linea{
+    background: white;
+    border-radius: 10px;
+    width: 60px;
+    height: 10px;
+    margin: 6px 10px;
+  }
+  nav{
+    display: none;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 #link:hover {
-  opacity: 0.7;
+  opacity: 0.7; 
 }
 
 #link {

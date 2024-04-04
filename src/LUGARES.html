@@ -2,124 +2,140 @@
 <head>
     <meta charset="UTF-8">
     <title>LUGARES</title> 
-    <link href="./src/output.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://kit.fontawesome.com/b9319bf6a4.js" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="https://i.imgur.com/Gqm2toG.png">
     <!-- <link rel="stylesheet" href="Styles_lugares.css"> -->
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <!--     
     <link rel="stylesheet" href="styles_footer.css"> -->
     
     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <style>
+      .fade-enter-active, .fade-leave-active {
+        transition: opacity 0.5s ease-in-out;
+      }
+      .fade-enter, .fade-leave-to {
+        opacity: 0;
+      }
+    </style>
 </head>
-<body>
-  <header class="header_body">
-    <div class="imagen">
-      <img class="icono" src="https://i.imgur.com/Gqm2toG.png">
-    </div>
-    <div class="lineas">
-      <div class="linea"></div>
-      <div class="linea"></div>
-      <div class="linea"></div>
-    </div>
-    <nav>
-      <a class="bg-violet-500 " id="link" href="INICIO.html">INICIO</a>
-      <a id="link" href="LUGARES.html">LUGARES</a>
-      <a id="link" href="MONSTRUOS.html">MONSTRUOS</a>
-      <a id="link" href="TOP ARMAS.html">TOP ARMAS</a>
-      <a id="link" href="FORMULARIO DE CONTACTO.html">FORMULARIO DE CONTACTO</a>
-      <a id="persona" href="loginRegister.html"><i class="fas fa-user"></i></a>
+<body class="bg-slate-500">
+  <header class="flex justify-between items-center">
+    <img class="w-12" src="https://i.imgur.com/Gqm2toG.png">
+    <nav class="hidden w-full md:block md:w-auto" id="navbar-default">
+      <a href="INICIO.html" class="link text-white text-base md:text-lg px-4 py-2 inline-block relative hover:text-opacity-70 hover:underline transition duration-300">INICIO</a>
+      <a href="LUGARES.html" class="link text-white text-base md:text-lg px-4 py-2 inline-block relative hover:text-opacity-70 hover:underline transition duration-300">LUGARES</a>
+      <a href="MONSTRUOS.html" class="link text-white text-base md:text-lg px-4 py-2 inline-block relative hover:text-opacity-70 hover:underline transition duration-300">MONSTRUOS</a>
+      <a href="TOP ARMAS.html" class="link text-white text-base md:text-lg px-4 py-2 inline-block relative hover:text-opacity-70 hover:underline transition duration-300">TOP ARMAS</a>
+      <a href="FORMULARIO DE CONTACTO.html" class="link text-white text-base md:text-lg px-4 py-2 inline-block relative hover:text-opacity-70 hover:underline transition duration-300">FORMULARIO DE CONTACTO</a>
+      <a href="loginRegister.html" class="link text-white text-base md:text-lg px-4 py-2 inline-block relative hover:text-opacity-70 hover:underline transition duration-300"><i class="fas fa-user"></i></a>
+      <span class="absolute left-0 bottom-0 w-0 h-px bg-white opacity-0 transition-opacity duration-300 group-hover:opacity-100 w-full"></span>
     </nav>
+    <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
+      <span class="sr-only">Open main menu</span>
+      <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+      </svg>
+  </button>
   </header>
+
+  <nav id="mobileNav" class="hidden md:hidden space-y-2 mt-2">
+    <a href="INICIO.html" class="block text-white text-base md:text-lg px-4 py-2 relative hover:text-opacity-70 hover:underline transition duration-300">INICIO</a>
+    <a href="LUGARES.html" class="block text-white text-base md:text-lg px-4 py-2 relative hover:text-opacity-70 hover:underline transition duration-300">LUGARES</a>
+    <a href="MONSTRUOS.html" class="block text-white text-base md:text-lg px-4 py-2 relative hover:text-opacity-70 hover:underline transition duration-300">MONSTRUOS</a>
+    <a href="TOP ARMAS.html" class="block text-white text-base md:text-lg px-4 py-2 relative hover:text-opacity-70 hover:underline transition duration-300">TOP ARMAS</a>
+    <a href="FORMULARIO DE CONTACTO.html" class="block text-white text-base md:text-lg px-4 py-2 relative hover:text-opacity-70 hover:underline transition duration-300">FORMULARIO DE CONTACTO</a>
+    <a href="loginRegister.html" class="block text-white text-base md:text-lg px-4 py-2 relative hover:text-opacity-70 hover:underline transition duration-300">Iniciar sesión / Registrarse</a>
+  </nav>
 
   <div class="">
       <div class="mySlides fade">
-        <div class="numbertext">1 / 15</div>
+        <div class="hidden" id="numbertext">1 / 15</div>
         <img src="https://static.wikia.nocookie.net/monsterhunterespanol/images/3/3b/MHGen-Isla_Desierta.jpg/revision/latest?cb=20151118171856&path-prefix=es" style="width:811px;height: 358px;">
         <div class="text-center">Isla Desierta</div>
       </div>
 
       <div class="mySlides fade">
-        <div class="numbertext">2 / 15</div>
+        <div class="hidden" id="numbertext">2 / 15</div>
         <img src="https://static.wikia.nocookie.net/monsterhunterespanol/images/f/fb/MH3-Llanos_Arenosos.jpg/revision/latest?cb=20160227160225&path-prefix=es" style="width:811px;height: 358px;">
         <div class="text">Llanos Arenosos</div>
       </div>
     
       <div class="mySlides fade">
-        <div class="numbertext">3 / 15</div>
+        <div class="hidden" id="numbertext">3 / 15</div>
         <img src="https://static.wikia.nocookie.net/monsterhunterespanol/images/0/07/MH3-Bosque_Inundado.jpg/revision/latest?cb=20160227141454&path-prefix=es" style="width:811px;height: 358px;">
         <div class="text">Bosque Inundado</div>
       </div>
       <div class="mySlides fade">
-        <div class="numbertext">4 / 15</div>
+        <div class="hidden" id="numbertext">4 / 15</div>
         <img src="https://static.wikia.nocookie.net/monsterhunterespanol/images/0/01/MH3-Tundra.jpg/revision/latest?cb=20160227115944&path-prefix=es" style="width:811px;height: 358px;">
         <div class="text">Tundra</div>
       </div>
     
       <div class="mySlides fade">
-        <div class="numbertext">5 / 15</div>
+        <div class="hidden" id="numbertext">5 / 15</div>
         <img src="https://static.wikia.nocookie.net/monsterhunterespanol/images/0/05/MH3-Volc%C3%A1n_003.jpg/revision/latest?cb=20160227163532&path-prefix=es" style="width:811px;height: 358px;">
         <div class="text">Volcán</div>
       </div>
     
       <div class="mySlides fade">
-        <div class="numbertext">6 / 15</div>
+        <div class="hidden" id="numbertext">6 / 15</div>
         <img src="https://static.wikia.nocookie.net/monsterhunterespanol/images/d/d6/MHP3-Cumbres_Borrascosas.jpg/revision/latest?cb=20150715184451&path-prefix=es" style="width:811px;height: 358px;">
         <div class="text">Cumbres Borrascosas</div>
       </div>
 
       <div class="mySlides fade">
-        <div class="numbertext">7 / 15</div>
+        <div class="hidden" id="numbertext">7 / 15</div>
         <img src="https://static.wikia.nocookie.net/monsterhunterespanol/images/7/76/MH3-Gran_Desierto.jpg/revision/latest?cb=20161111161738&path-prefix=es" style="width:811px;height: 358px;">
         <div class="text">Gran Desierto</div>
       </div>
     
       <div class="mySlides fade">
-        <div class="numbertext">8 / 15</div>
+        <div class="hidden" id="numbertext">8 / 15</div>
         <img src="https://static.wikia.nocookie.net/monsterhunterespanol/images/e/e6/MH3-Ruina_Submarina.jpg/revision/latest?cb=20160227104955&path-prefix=es" style="width:811px;height: 358px;">
         <div class="text">Ruina Submarina</div>
       </div>
     
       <div class="mySlides fade">
-        <div class="numbertext">9 / 15</div>
+        <div class="hidden" id="numbertext">9 / 15</div>
         <img src="https://static.wikia.nocookie.net/monsterhunterespanol/images/3/3a/MH3-Tierra_Sagrada.png/revision/latest?cb=20130519103916&path-prefix=es" style="width:811px;height: 358px;">
         <div class="text">Tierra Sagrada</div>
       </div>
       <div class="mySlides fade">
-        <div class="numbertext">10 / 15</div>
+        <div class="hidden" id="numbertext">10 / 15</div>
         <img src="https://static.wikia.nocookie.net/monsterhunterespanol/images/6/60/MH3U-Mar_Contaminado.png/revision/latest?cb=20200919103418&path-prefix=es" style="width:811px;height: 358px;">
         <div class="text">Mar Contaminado</div>
       </div>
     
       <div class="mySlides fade">
-        <div class="numbertext">11 / 15</div>
+        <div class="hidden" id="numbertext">11 / 15</div>
         <img src="https://static.wikia.nocookie.net/monsterhunterespanol/images/9/91/MHFU-Torre_3.png/revision/latest?cb=20150804183027&path-prefix=es" style="width:811px;height: 358px;">
         <div class="text">Torre</div>
       </div>
     
       <div class="mySlides fade">
-        <div class="numbertext">12 / 15</div>
+        <div class="hidden" id="numbertext">12 / 15</div>
         <img src="https://static.wikia.nocookie.net/monsterhunterespanol/images/e/e7/MH3-Arena_Tierra.jpg/revision/latest?cb=20140804150125&path-prefix=es" style="width:811px;height: 358px;">
         <div class="text">Arena: Tierra</div>
       </div>
       <div class="mySlides fade">
-        <div class="numbertext">13 / 15</div>
+        <div class="hidden" id="numbertext">13 / 15</div>
         <img src="https://static.wikia.nocookie.net/monsterhunterespanol/images/4/4e/MH3-Arena_Agua.jpg/revision/latest?cb=20140804151402&path-prefix=es" style="width:811px;height: 358px;">
         <div class="text">Arena: Agua</div>
 
       </div>
     
       <div class="mySlides fade">
-        <div class="numbertext">14 / 15</div>
+        <div class="hidden" id="numbertext">14 / 15</div>
         <img src="https://static.wikia.nocookie.net/monsterhunterespanol/images/f/ff/MH3U-Moga.jpg/revision/latest?cb=20151002205628&path-prefix=es" style="width:811px;height: 358px;">
         <div class="text">Aldea de Moga</div>
       </div>
     
       <div class="mySlides fade">
-        <div class="numbertext">15 / 15</div>
+        <div class="hidden" id="numbertext">15 / 15</div>
         <img src="https://static.wikia.nocookie.net/monsterhunterespanol/images/f/f0/MH3U-Tanzia.jpg/revision/latest?cb=20160324193806&path-prefix=es" style="width:811px;height: 358px;">
         <div class="text">Puerto Tanzia</div>
       </div>
@@ -150,7 +166,7 @@
   </div>
   <div class="contenido">
     <div class="texto">
-      <div class="numbertext">1 / 15</div>
+      <div class="hidden" id="numbertext">1 / 15</div>
       <div class="tabla-container">
         <div class="caracteristicas">
           <h1>Características</h1>
@@ -210,7 +226,7 @@
       </div>
     </div>
     <div class="texto">
-      <div class="numbertext">2 / 15</div>
+      <div class="hidden" id="numbertext">2 / 15</div>
       <div class="tabla-container">
         <div class="caracteristicas">
           <h1>Características</h1>
@@ -261,7 +277,7 @@
       </div>
     </div>
     <div class="texto">
-      <div class="numbertext">3 / 15</div>
+      <div class="hidden" id="numbertext">3 / 15</div>
       <div class="tabla-container">
         <div class="caracteristicas">
           <h1>Características</h1>
@@ -307,7 +323,7 @@
       </div>
     </div>
     <div class="texto">
-      <div class="numbertext">4 / 15</div>
+      <div class="hidden" id="numbertext">4 / 15</div>
       <div class="tabla-container">
         <div class="caracteristicas">
           <h1>Características</h1>
@@ -351,7 +367,7 @@
       </div>
     </div>
     <div class="texto">
-      <div class="numbertext">5 / 15</div>
+      <div class="hidden" id="numbertext">5 / 15</div>
       <div class="tabla-container">
         <div class="caracteristicas">
           <h1>Características</h1>
@@ -399,7 +415,7 @@
       </div>
     </div>
     <div class="texto">
-      <div class="numbertext">6 / 15</div>
+      <div class="hidden" id="numbertext">6 / 15</div>
       <div class="tabla-container">
         <div class="caracteristicas">
           <h1>Características</h1>
@@ -447,7 +463,7 @@
       </div>
     </div>
     <div class="texto">
-      <div class="numbertext">7 / 15</div>
+      <div class="hidden" id="numbertext">7 / 15</div>
       <div class="tabla-container">
         <div class="caracteristicas">
           <h1>Características</h1>
@@ -509,7 +525,7 @@
       </div>
     </div>
     <div class="texto">
-      <div class="numbertext">8 / 15</div>
+      <div class="hidden" id="numbertext">8 / 15</div>
       <div class="tabla-container">
         <div class="caracteristicas">
           <h1>Características</h1>
@@ -571,7 +587,7 @@
       </div>
     </div>
     <div class="texto">
-      <div class="numbertext">9 / 15</div>
+      <div class="hidden" id="numbertext">9 / 15</div>
       <div class="tabla-container">
         <div class="caracteristicas">
           <h1>Características</h1>
@@ -633,7 +649,7 @@
       </div>
     </div>
     <div class="texto">
-      <div class="numbertext">10 / 15</div>
+      <div class="hidden" id="numbertext">10 / 15</div>
       <div class="tabla-container">
         <div class="caracteristicas">
           <h1>Características</h1>
@@ -695,7 +711,7 @@
       </div>
     </div>
     <div class="texto">
-      <div class="numbertext">11 / 15</div>
+      <div class="hidden" id="numbertext">11 / 15</div>
       <div class="tabla-container">
         <div class="caracteristicas">
           <h1>Características</h1>
@@ -757,7 +773,7 @@
       </div>
     </div>
     <div class="texto">
-      <div class="numbertext">12 / 15</div>
+      <div class="hidden" id="numbertext">12 / 15</div>
       <div class="tabla-container">
         <div class="caracteristicas">
           <h1>Características</h1>
@@ -819,7 +835,7 @@
       </div>
     </div>
     <div class="texto">
-      <div class="numbertext">13 / 15</div>
+      <div class="hidden" id="numbertext">13 / 15</div>
       <div class="tabla-container">
         <div class="caracteristicas">
           <h1>Características</h1>
@@ -881,7 +897,7 @@
       </div>
     </div>
     <div class="texto">
-      <div class="numbertext">14 / 15</div>
+      <div class="hidden" id="numbertext">14 / 15</div>
       <div class="tabla-container">
         <div class="caracteristicas">
           <h1>Características</h1>
@@ -943,7 +959,7 @@
       </div>
     </div>
     <div class="texto">
-      <div class="numbertext">15 / 15</div>
+      <div class="hidden" id="numbertext">15 / 15</div>
       <div class="tabla-container">
         <div class="caracteristicas">
           <h1>Características</h1>
@@ -1080,6 +1096,38 @@
       slides[slideIndex-1].style.display = "block";
       dots[slideIndex-1].className += " active";
       }
-
+  </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const toggleBtn = document.getElementById("toggleBtn");
+      const mobileNav = document.getElementById("mobileNav");
+  
+      // Función para alternar la visibilidad del menú móvil
+      function toggleMobileNav() {
+        mobileNav.classList.toggle("hidden");
+        mobileNav.classList.toggle("fade-enter");
+      }
+  
+      // Escucha de eventos para el botón de menú
+      toggleBtn.addEventListener("click", function() {
+        toggleMobileNav();
+      });
+  
+      // Escucha de eventos para los enlaces del menú móvil
+      const mobileLinks = mobileNav.querySelectorAll(".link");
+      mobileLinks.forEach(link => {
+        link.addEventListener("click", function() {
+          toggleMobileNav(); // Ocultar el menú móvil al hacer clic en un enlace
+        });
+      });
+  
+      // Escucha de eventos de transición para el menú móvil
+      mobileNav.addEventListener("transitionend", function() {
+        if (!mobileNav.classList.contains("hidden")) {
+          mobileNav.classList.remove("fade-enter");
+          mobileNav.classList.add("fade-enter-active");
+        }
+      });
+    });
   </script>
 </html>

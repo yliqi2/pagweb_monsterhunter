@@ -183,6 +183,7 @@ i {
     transform: scaleX(1);
 }
 header {
+    padding: 20px;
     background-color: transparent;
     position: fixed;
     width: 100%;

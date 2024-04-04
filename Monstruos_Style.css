@@ -18,6 +18,7 @@ body {
 
 
 header {
+    padding: 20px;
     background-color: transparent;
     position: sticky;
     width: 100%;

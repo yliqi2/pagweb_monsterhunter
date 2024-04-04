@@ -1,7 +1,6 @@
 .icono {
     width: 50px;
     height: 50px;
-    padding: 20px;
 }
 
 body {
@@ -15,6 +14,7 @@ body {
 }
 
 header {
+    padding: 20px;
     background-color: transparent;
     position: sticky;
     width: 100%;

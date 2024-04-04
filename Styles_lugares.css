@@ -197,6 +197,13 @@ i {
   column-span: 5;
 }
 
-.footer{
-  margin-top: -200px;
+.txtini{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+h1 {
+  font-size: 35px;
+  color: white;
 }

@@ -93,10 +93,10 @@ section h1 {
     margin-top: 50px;
 }
 
-
-
-.video {
+video {
     margin-bottom: 30px;
+    width: 100%;
+    height: auto;
 }
 
 .estructura {

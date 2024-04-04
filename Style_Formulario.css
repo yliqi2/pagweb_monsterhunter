@@ -132,7 +132,7 @@ p {
     flex-direction: column;
     gap: 10px;
     max-width: 350px;
-    background-color: #fff;
+    background-color: rgb(34, 31, 31);
     padding: 20px;
     border-radius: 10px;
     position: relative;

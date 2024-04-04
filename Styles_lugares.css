@@ -90,7 +90,7 @@ i {
 
 .mySlides {
   display: none;
-  margin-top: 8%;
+  margin-top: 3%;
 }
 
 .prev, .next {
@@ -199,7 +199,6 @@ i {
 
 .txtini{
   margin-top: 20px;
-  margin-bottom: 20px;
   color: white;
 }
 

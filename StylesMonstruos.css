@@ -100,18 +100,19 @@ video {
 }
 
 .estructura {
-    width: 50%; 
+    width: 90%; 
     margin: auto; 
     display: flex;
     flex-wrap: wrap; 
 }
 
 .ImgTxt {
-    flex: 1 0 calc(33.33% - 20px); 
+    flex: 1 0 calc(16.66% - 20px); /* Ajuste del ancho para mostrar 6 elementos por fila */
     margin: 5px 10px; 
     text-align: center;
     box-sizing: border-box; 
 }
+
 
 .ImgTxt img {
     width: 100%;

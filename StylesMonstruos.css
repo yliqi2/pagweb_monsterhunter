@@ -89,14 +89,15 @@ section {
     text-align: center;
 }
 
-section h1 {
-    margin-top: 50px;
-}
-
 video {
     margin-bottom: 30px;
     width: 100%;
     height: auto;
+}
+
+.txtini{
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .estructura {
@@ -107,7 +108,7 @@ video {
 }
 
 .ImgTxt {
-    flex: 1 0 calc(16.66% - 20px); /* Ajuste del ancho para mostrar 6 elementos por fila */
+    flex: 1 0 calc(16.66% - 20px);
     margin: 5px 10px; 
     text-align: center;
     box-sizing: border-box; 

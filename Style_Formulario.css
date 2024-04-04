@@ -83,6 +83,11 @@ i {
     color: white;
 }
 
+.txtini{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 .contenedor {
     display: flex;
     flex-direction: column;

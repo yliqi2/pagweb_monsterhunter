@@ -95,6 +95,10 @@ video {
     height: auto;
 }
 
+h1 {
+    font-size: 35px;
+}
+
 .txtini{
     margin-top: 20px;
     margin-bottom: 20px;

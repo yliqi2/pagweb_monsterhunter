@@ -100,7 +100,7 @@ function barra_busqueda() {
         ];
           
             const Resultado = document.getElementById('resultadoBusqueda');
-            // Resultado.innerHTML = '';
+            Resultado.innerHTML = '';
             // Resultado.style.top = '3.2%';
             // Resultado.style.right = '10px';
             // Resultado.style.transform = 'translateY(-50%)';
@@ -126,6 +126,7 @@ function barra_busqueda() {
                 Lista_Resultados.style.listStyleType = 'none';
                 Lista_Resultados.style.padding = '0';
                 Lista_Resultados.style.scrollBehavior = 'initial';
+                Lista_Resultados.style.scrollSnapAlign = 'center';
                 Lista_Resultados.style.maxHeight = '200px';
                 Lista_Resultados.style.overflow = 'auto';
 

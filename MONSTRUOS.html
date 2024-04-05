@@ -29,7 +29,16 @@
         
     <div class="todo">
 
-        <video class="intro" autoplay muted loop src="Opening Cinematic.mp4"></video>
+        <video id="intro" autoplay muted loop src="Opening Cinematic.mp4"></video>
+        <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var video = document.getElementById('intro');
+            video.addEventListener('loadedmetadata', function () {
+            this.currentTime = 4;
+            });
+        });
+        </script>
+
     
     <div class="estructura">
         <div class="ImgTxt">

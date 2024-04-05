@@ -83,7 +83,8 @@ i {
 }
 
 .slideshow-container {
-  max-width: 811px;
+  max-width: 850px;
+  min-width: 850px;
   position: relative;
   margin: auto;
 }
@@ -92,7 +93,9 @@ i {
   display: none;
   margin-top: 3%;
 }
-
+.mySlides img{
+  width: 100%;
+}
 .prev, .next {
   cursor: pointer;
   position: absolute;

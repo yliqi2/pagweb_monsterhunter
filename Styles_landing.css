@@ -24,6 +24,9 @@ header {
     justify-content: space-between; 
     align-items: center; 
     font-family: "Poppins", sans-serif;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
 }
 
 nav {
@@ -191,10 +194,9 @@ i {
     background-color: rgba(255, 255, 255, 0.2);
 }
 
-/* Media query para mostrar el desplegable en pantallas menores a 900px */
 @media screen and (max-width: 900px) {
     .dropbtn {
-        display: block; /* Mostrar el botón del desplegable */
+        display: block; 
     }
 
     nav {
@@ -202,7 +204,7 @@ i {
     }
 
     .desplegable:hover .contenido-desplegable {
-        display: block; /* Mostrar el contenido al hacer hover sobre el desplegable */
+        display: block; 
     }
 
 }

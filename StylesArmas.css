@@ -13,6 +13,9 @@ header {
     justify-content: space-between; 
     align-items: center; 
     font-family: "Poppins", sans-serif;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
 }
 
 nav {
@@ -180,7 +183,7 @@ h1 {
 }
 @media screen and (max-width: 900px) {
     .dropbtn {
-        display: block; /* Mostrar el botón del desplegable */
+        display: block;
     }
 
     nav {
@@ -188,7 +191,7 @@ h1 {
     }
 
     .desplegable:hover .contenido-desplegable {
-        display: block; /* Mostrar el contenido al hacer hover sobre el desplegable */
+        display: block;
     }
 
 }

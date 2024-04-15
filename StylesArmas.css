@@ -94,19 +94,28 @@ section {
 }
 
 .estructura {
-    max-width: 1200px;
+    width: 80%;
     margin: auto; 
     display: flex;
-    flex-wrap: wrap; 
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    @media screen and (max-width : 980px) {
+        width: 100%;
+    }
 }
 
 .ImgTxt {
-    flex-basis: calc(16.66% - 20px);
+    max-width: 100px;
     margin: 5px 10px; 
     text-align: center;
     box-sizing: border-box; 
+    @media screen and (max-width : 980px) {
+        max-width: 100px;
+    }
 }
+
 
 .ImgTxt img {
     width: 100%;

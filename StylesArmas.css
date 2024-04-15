@@ -93,15 +93,15 @@ section {
 }
 
 .estructura {
-    max-width: 1200px; /* Establece el ancho máximo del contenedor */
+    max-width: 1200px;
     margin: auto; 
     display: flex;
     flex-wrap: wrap; 
-    justify-content: space-between; /* Distribuye los elementos equitativamente */
+    justify-content: space-between;
 }
 
 .ImgTxt {
-    flex-basis: calc(16.66% - 20px); /* Ajusta el ancho de cada elemento */
+    flex-basis: calc(16.66% - 20px);
     margin: 5px 10px; 
     text-align: center;
     box-sizing: border-box; 
@@ -130,4 +130,8 @@ section {
 
 h1 {
     font-size: 35px;
+}
+
+.contenedor {
+    min-height: 100vh;
 }

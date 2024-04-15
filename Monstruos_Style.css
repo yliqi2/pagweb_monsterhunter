@@ -95,6 +95,7 @@ i {
     display: flex;
     flex-direction: column;
     align-items: center;
+    min-height: 100vh;
 }
 
 .monster_img {
@@ -116,5 +117,3 @@ i {
 #link:hover:after {
     transform: scaleX(1);
 }
-
-

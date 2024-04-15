@@ -91,6 +91,7 @@ body {
 .centrar {
     text-align: center;
     margin: 0 auto;
+    min-height: 100vh;
 }
 
 
@@ -135,5 +136,3 @@ th, td {
 .content p {
     margin: 0;
 }
-
-        

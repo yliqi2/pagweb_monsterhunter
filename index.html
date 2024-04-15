@@ -127,10 +127,6 @@ function barra_busqueda() {
           
             const Resultado = document.getElementById('resultadoBusqueda');
             Resultado.innerHTML = '';
-            // Resultado.style.top = '3.2%';
-            // Resultado.style.right = '10px';
-            // Resultado.style.transform = 'translateY(-50%)';
-            // Resultado.style.backgroundColor = 'black';
             Resultado.style.width = '235px';
             Resultado.style.position = 'fixed';
             Resultado.style.borderBottomLeftRadius = '10px';
@@ -178,17 +174,14 @@ function barra_busqueda() {
             }
           }
 
-    // JavaScript para mostrar/ocultar el desplegable
 document.addEventListener("DOMContentLoaded", function() {
     const desplegable = document.querySelector(".desplegable");
     const contenidoDesplegable = document.querySelector(".contenido-desplegable");
 
-    // Evento click en el botón del desplegable
     desplegable.addEventListener("click", function() {
         contenidoDesplegable.classList.toggle("show");
     });
 
-    // Evento click en cualquier parte fuera del desplegable para cerrarlo
     window.addEventListener("click", function(event) {
         if (!event.target.matches(".dropbtn")) {
             if (contenidoDesplegable.classList.contains("show")) {

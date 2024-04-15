@@ -20,8 +20,6 @@ section {
     
 }
 
-/* vh = altura de dispositivo*/
-
 .form-box {
     width: 380px;
     height: 480px;
@@ -35,7 +33,7 @@ section {
 }
 
 .button-box {
-    width: 220px;
+    width: 290px;
     margin: 35px auto;
     position: relative;
     box-shadow: 0 0 20px 9px #c7e6eb1f;
@@ -58,7 +56,7 @@ section {
     top: 0;
     left: 0;
     position: absolute;
-    width: 110px;
+    width: 130px;
     height: 100%;
     background: linear-gradient(to left, #06162E, #3477CE);
     border-radius: 30px;
@@ -129,8 +127,6 @@ span {
 #register {
     left: 450px;
 }
-
-/* nav y header */
 
 nav a {
     text-decoration: none;

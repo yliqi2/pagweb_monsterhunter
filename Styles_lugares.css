@@ -230,12 +230,15 @@ i {
   color: white;
   text-align: center;
 }
-
+.cerrar{
+  margin-top: 5%;
+}
 .tabla-container {
   float: right;
   margin-left: 10px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
   gap: 50px; 
 }
 

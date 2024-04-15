@@ -29,7 +29,7 @@ nav {
   display: flex;
   flex-grow: 1;
   justify-content: center;
-  margin-left: 20%;
+  margin-left: 25%;
 }
 
 nav a {
@@ -93,8 +93,8 @@ i {
     min-width: 650px;
   }
   @media screen and (max-width : 500px) {
-    max-width: 250px;
-    min-width: 250px;
+    max-width: 300px;
+    min-width: 300px;
   }
 }
 

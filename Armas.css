@@ -156,6 +156,7 @@ th, td {
 .desplegable {
     position: relative;
     margin-right: 50%;
+    margin-right: 10%;
 }
 
 .dropbtn {
@@ -170,8 +171,11 @@ th, td {
 .contenido-desplegable {
     display: none;
     position: absolute;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: #000;
     z-index: 1000;
+    right: 5%;
+    border-radius: 5px;
+    border: 1px solid grey;
 }
 
 .contenido-desplegable a {

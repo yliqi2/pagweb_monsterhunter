@@ -124,6 +124,7 @@ i {
 .desplegable {
     position: relative;
     margin-right: 50%;
+    margin-right: 10%;
 }
 
 .dropbtn {
@@ -138,8 +139,11 @@ i {
 .contenido-desplegable {
     display: none;
     position: absolute;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: #000;
     z-index: 1000;
+    right: 5%;
+    border-radius: 5px;
+    border: 1px solid grey;
 }
 
 .contenido-desplegable a {
@@ -153,6 +157,7 @@ i {
 .contenido-desplegable a:hover {
     background-color: rgba(255, 255, 255, 0.2);
 }
+
 @media screen and (max-width: 900px) {
     .dropbtn {
         display: block;
@@ -163,7 +168,7 @@ i {
     }
 
     .desplegable:hover .contenido-desplegable {
-        display: block; 
+        display: block;
     }
 
 }

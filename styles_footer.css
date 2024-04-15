@@ -70,3 +70,9 @@
     text-align: center;
     color: white;
 }
+
+.footer {
+    @media screen and (max-width : 980px){
+        display: none;
+    }
+}

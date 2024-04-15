@@ -9,6 +9,7 @@ body {
     background-size: cover; 
     background-position: center; 
     margin: 0;
+    overflow: hidden;
     padding: 0;
     font-family: "Poppins", sans-serif;
 }
@@ -29,6 +30,7 @@ nav {
     display: flex;
     flex-grow: 1;
     justify-content: center;
+    margin-left: 20%;
 }
 
 nav a {
@@ -92,8 +94,16 @@ i {
 }
 
 .centrado {
-    width: auto;
+    width: 100%;
     height: auto;
+}
+.centrado img{
+    @media screen and (max-width : 980px) {
+        width: 500px;
+    }
+    @media screen and (max-width : 500px) {
+        width: 250px;
+    }
 }
 
 .buscador {
@@ -101,7 +111,12 @@ i {
     padding-left: 50%;
     margin-top: -6%;
     z-index: 1;
+    @media screen and (max-width : 500px) {
+        margin-left: -30px;;
+    }
 }
+
+
 
 #InsertarTextoBarra {
     justify-content: center;
@@ -124,6 +139,9 @@ i {
     border-radius: 20px;
     cursor: pointer;
     outline: none;
+    @media screen and (max-width : 500px) {
+        display: none;
+    }
 }
 
 #btn_buscar:active {
@@ -139,13 +157,54 @@ i {
     z-index: 2;
 }
 
-body {
-    background-image: url("https://wallpaper-mania.com/wp-content/uploads/2018/09/High_resolution_wallpaper_background_ID_77700872858.jpg");
-    background-repeat: no-repeat;
-    background-size: cover; 
-    background-position: center; 
-    margin: 0;
-    padding: 0;
-    font-family: "Poppins", sans-serif;
-    overflow: hidden;
+
+.desplegable {
+    position: relative;
+    margin-right: 50%;
 }
+
+.dropbtn {
+    background-color: transparent;
+    color: white;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+    display: none;
+}
+
+.contenido-desplegable {
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+}
+
+.contenido-desplegable a {
+    color: white;
+    padding: 12px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+
+.contenido-desplegable a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Media query para mostrar el desplegable en pantallas menores a 900px */
+@media screen and (max-width: 900px) {
+    .dropbtn {
+        display: block; /* Mostrar el botón del desplegable */
+    }
+
+    nav {
+        display: none;
+    }
+
+    .desplegable:hover .contenido-desplegable {
+        display: block; /* Mostrar el contenido al hacer hover sobre el desplegable */
+    }
+
+}
+
+

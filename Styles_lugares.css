@@ -87,7 +87,6 @@ i {
   min-width: 850px;
   position: relative;
   margin: auto;
-  min-height: 100vh;
 }
 
 .mySlides {
@@ -246,4 +245,8 @@ i {
 h1 {
   font-size: 35px;
   color: white;
+}
+
+.contenedor {
+  min-height: 100vh;
 }

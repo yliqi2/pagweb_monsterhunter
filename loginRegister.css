@@ -9,6 +9,7 @@ body
     background: url(https://wallpaper-mania.com/wp-content/uploads/2018/09/High_resolution_wallpaper_background_ID_77700872858.jpg) no-repeat;
     background-position: center;
     background-size: cover;
+    overflow: hidden;
 }
 
 section {
@@ -29,6 +30,7 @@ section {
     overflow: hidden;
     border: 2px solid rgba(255, 255, 255, .6);
     border-radius: 15px;
+
 }
 
 .button-box {

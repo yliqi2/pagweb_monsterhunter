@@ -247,6 +247,9 @@ i {
   color: white;
   border: 2px solid rgba(255, 255, 255, .6);
   border-radius: 15px;
+  @media screen and (max-width : 500px) {
+    display: none;
+  }
 }
 
 .tr td {

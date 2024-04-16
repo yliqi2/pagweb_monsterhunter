@@ -15,9 +15,8 @@ body {
     overflow: hidden;
 }
 
-
 section {
-
+    justify-content: flex-start;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -26,9 +25,9 @@ section {
 
 .form-box {
     width: 380px;
-    height: 480px;
+    height: 430px;
     position: relative;
-    margin: 6% auto;
+    margin: 2% auto;
     background-color: trans;
     padding: 5px;
     overflow: hidden;

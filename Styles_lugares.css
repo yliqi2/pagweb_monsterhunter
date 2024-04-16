@@ -115,9 +115,12 @@ i {
 .popup {
   display: none;
   position: fixed;
-  z-index: 1;
+  z-index: 2000;
   left: 0;
   top: 0;
+  @media screen and (max-width : 980px) {
+    padding-top: 10%;
+  }
   width: 100%;
   height: 100%;
   overflow: auto;
@@ -230,12 +233,20 @@ i {
   color: white;
   text-align: center;
 }
-
+.cerrar{
+  margin-top: 5%;
+}
+.mGrandesRow{
+  @media screen and (max-width: 980px;){
+    display:none;
+  }
+}
 .tabla-container {
   float: right;
   margin-left: 10px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
   gap: 50px; 
 }
 
@@ -247,9 +258,6 @@ i {
   color: white;
   border: 2px solid rgba(255, 255, 255, .6);
   border-radius: 15px;
-  @media screen and (max-width : 500px) {
-    display: none;
-  }
 }
 
 .tr td {
